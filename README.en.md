@@ -6,6 +6,14 @@ Apply a local background image and a light palette to Windows Codex temporarily.
 
 **Experimental source release; not an OpenAI product. No preview, manager, background service or startup task.** The prototype was tested on Codex 26.930.3930.0. This reduced entry point has offline checks but has not been retested against a live window. Applying to other Codex versions is rejected.
 
+## Original project and credits
+
+Original project: [**Codex Dream Skin — Fei-Away/Codex-Dream-Skin**](https://github.com/Fei-Away/Codex-Dream-Skin). Thanks to Fei-Away and the community for the Codex skinning ideas.
+
+This project started after encountering Windows version compatibility problems while using Dream Skin. It independently implements a small, temporary background and palette tool. **It is not a fork of Dream Skin or an official fix from its author.** It does not modify or bundle the Dream Skin engine or community theme assets.
+
+If an updated Dream Skin works with your Codex version, finish this patch flow and return using the original project's instructions. See [third-party notices](THIRD-PARTY-NOTICES.md) for dependency and asset details.
+
 ## What needs to be open?
 
 | Item | What to do |

@@ -6,6 +6,14 @@
 
 **实验性源码版，非 OpenAI 官方产品。没有预览环节，也没有管理窗口、后台守护或开机自启。** 原型曾在 Codex 26.930.3930.0 上实测；此精简版入口目前只通过离线检查，尚未重新接入真实窗口。其他 Codex 版本会拒绝应用。
 
+## 原项目与致谢
+
+原项目：[**Codex Dream Skin — Fei-Away/Codex-Dream-Skin**](https://github.com/Fei-Away/Codex-Dream-Skin)。感谢原作者 Fei-Away 及社区提供的 Codex 换肤思路。
+
+本项目起因是使用 Dream Skin 时遇到 Windows 版本兼容问题，因此独立实现了一个小型临时背景与配色工具。**它不是 Dream Skin 的 fork，也不是原作者发布的官方修复版**；不修改其引擎，不包含原项目引擎或社区主题素材。
+
+如果原项目更新后已适配你的 Codex 版本，可以结束本补丁流程，按原项目说明切回。依赖和素材说明见 [第三方说明](THIRD-PARTY-NOTICES.md)。
+
 ## 先弄清楚：哪些要开，哪些要关？
 
 | 项目 | 操作要求 |
