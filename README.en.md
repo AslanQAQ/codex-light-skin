@@ -2,9 +2,22 @@
 
 [中文](README.md)
 
-Apply a local background image and a light palette to Windows Codex temporarily. There are only two commands: apply and remove. The patch exits when the command finishes.
+Temporarily style Windows Codex with a custom background, a light palette, readable chat text, a light-gray composer, a translucent sidebar, and light web dialogs and menu panels. There are only two commands: apply and remove. The patch exits when the command finishes.
 
 **Experimental source release; not an OpenAI product. No preview, manager, background service or startup task.** The prototype was tested on Codex 26.930.3930.0. This reduced entry point has offline checks but has not been retested against a live window. Applying to other Codex versions is rejected.
+
+## What gets styled?
+
+| Area | Current styling |
+|---|---|
+| **Main background** | A local PNG covers the main chat area. Adjust the white overlay to fade the image. |
+| **Chat text and contrast** | Dark-gray primary text, gray secondary text and a dark input caret with light surfaces, addressing white text on a bright background. |
+| **Chat composer** | A translucent light-gray surface, dark text and light-gray border; the action bar uses a similar gray. |
+| **Sidebar translucency** | A background image and translucent light overlay on the sidebar, keeping navigation and project text readable. |
+| **Web dialogs** | A translucent light surface, dark text and light-gray border for HTML dialog elements and dialog/alertdialog roles. |
+| **Menus and other panels** | Shared Codex color variables provide light surfaces, dark text and soft-purple accents. |
+
+Only the main background fade is adjustable (`--overlay`). Text, composer, sidebar and popup surfaces use a fixed light palette; there are no separate contrast or opacity sliders. Translucency is a web styling effect, not Windows window opacity. Native Windows file pickers and other separate windows are outside the patch scope. The reduced version's live appearance still requires manual acceptance testing.
 
 ## Original project and credits
 

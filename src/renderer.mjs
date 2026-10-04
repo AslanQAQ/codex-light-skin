@@ -38,6 +38,7 @@ export function makeCss(image, overlay, dark, appearance="auto") {
     root+" "+main+' :is([class*="_MainContentFrame_"],.thread-scroll-container,[data-app-shell-main-content]) { background-color: transparent !important; }',
     root+' aside.app-shell-left-panel { background-image: linear-gradient(rgba('+rgb+','+(dark?.92:.80)+'),rgba('+rgb+','+(dark?.92:.80)+')),url("'+image+'") !important; background-size: cover !important; background-position: center !important; background-attachment: fixed !important; background-color: rgba('+rgb+',0.92) !important; }',
     !dark?root+' body, '+root+' '+main+', '+root+' aside.app-shell-left-panel { color: #1c1b1d !important; }':"",
+    !dark?root+' :is(dialog,[role="dialog"],[role="alertdialog"]) { background-color: rgba(254,254,254,0.96) !important; color: #1c1b1d !important; border-color: #d3d3d3 !important; }':"",
     !dark?root+' '+main+' :is([class*="_ComposerLayoutRoot_"],[data-composer-surface-variant],textarea,[contenteditable="true"]) { color: #1c1b1d !important; caret-color: #1c1b1d !important; }':"",
     !dark?root+' '+main+' :is([class*="_ComposerLayoutRoot_"],[data-composer-surface-variant]) { background-color: rgba(234,233,234,0.92) !important; border-color: #d3d3d3 !important; }':""
   ].join("\n");

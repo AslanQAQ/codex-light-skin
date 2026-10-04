@@ -5,6 +5,7 @@
 Initial experimental, source-only release derived from the local temporary style prototype.
 
 - Prominent Chinese/English credit to Fei-Away/Codex-Dream-Skin, with the independent temporary-tool relationship explained.
+- Describe chat text contrast, composer styling, sidebar translucency and panel colors on both homepages; add explicit cosmetic colors for web dialog and alertdialog surfaces.
 - Only apply and remove commands.
 - No preview page, preview builder, browser entry, manager window, app launcher, watcher, startup task or automatic restart.
 - No machine-specific runtime path, private profile, saved session or downloaded theme artwork.
